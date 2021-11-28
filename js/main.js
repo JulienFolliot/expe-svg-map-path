@@ -15,5 +15,6 @@ new L.GPX(gpx, {
     shadowUrl: 'location-shadow.svg'
   }
 }).on('loaded', function(e) {
-  map.fitBounds(e.target.getBounds());
+  // Noop
 }).addTo(map);
+
