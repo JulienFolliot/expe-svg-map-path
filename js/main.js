@@ -34,10 +34,10 @@ new L.GPX(gpx, {
   // Noop
 }).on('addpoint', function(e) {
   if(e.point_type == 'start') {
-    L.marker([e.point._latlng.lat, e.point._latlng.lng], {icon: locationStartIcon}).addTo(map).bindPopup('<h4>Start</h4><p>Let\'s go!!!</p>');
+    L.marker([e.point._latlng.lat, e.point._latlng.lng], {icon: locationStartIcon}).addTo(map).bindPopup('<h4>Couëron</h4><p>Starting point</p>');
   }
   else {
-    L.marker([e.point._latlng.lat, e.point._latlng.lng], {icon: locationEndIcon}).addTo(map).bindPopup('<h4>Finish</h4><p>Congratulations !!!</p>');
+    L.marker([e.point._latlng.lat, e.point._latlng.lng], {icon: locationEndIcon}).addTo(map).bindPopup('<h4>Nantes</h4><p>Destination point</p>');
   }
 
 }).addTo(map);
